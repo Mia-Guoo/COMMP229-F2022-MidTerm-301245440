@@ -103,12 +103,12 @@ router.post("/details/:id", (req, res, next) => {
 });
 
 // GET - process the delete
-router.get("/delete/:id", (req, res, next) => {
+router.get("/delete/:Facultyname", (req, res, next) => {
   /*****************
    * ADD CODE HERE *
    *****************/
-   let id = req.params.id;
-   faculty.remove({ _id: id }, (err) => {
+   let name = req.params.Facultyname;
+   faculty.remove({ Facultyname: name}, (err) => {
      if (err) {
        console.log(err);
        res.end(err);
