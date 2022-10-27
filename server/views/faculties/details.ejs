@@ -1,0 +1,72 @@
+<% include ../partials/header.ejs %>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-offset-3 col-md-6">
+      <h1><%= title %></h1>
+      <form class="form" method="post">
+        <div class="form-group">
+          <label for="facultyIDTextField">Faculty ID</label>
+          <input
+            type="text"
+            class="form-control"
+            id="facultyid"
+            placeholder="Faculty Id"
+            name="Facultyid"
+            value="<%= faculties.Facultyid %>"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="facultyNameTextField">Faculty Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="facultyNameTextField"
+            placeholder="Faculty Name"
+            name="Facultyname"
+            value="<%= faculties.Facultyname %>"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="departmentTextField">Department</label>
+          <input
+            type="text"
+            class="form-control"
+            id="departmentTextField"
+            placeholder="Department"
+            name="Department"
+            value="<%= faculties.Department %>"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="subjectTextField">Subject</label>
+          <input
+            type="text"
+            class="form-control"
+            id="subjectTextField"
+            placeholder="Subject"
+            name="Subject"
+            value="<%= faculties.Subject %>"
+            required
+          />
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+          <i class="fa fa-check-square-o"></i> Submit
+        </button>
+        <a href="/faculties" class="btn btn-warning"
+          ><i class="fa fa-undo"></i> Cancel</a
+        >
+      </form>
+    </div>
+  </div>
+</div>
+
+<% include ../partials/footer.ejs %>

@@ -1,0 +1,72 @@
+<% include ../partials/header.ejs %>
+
+<!-- Content  for the add page -->
+<div class="container">
+    <div class="row">
+      <div class="offset-md-3 col-md-6">
+        <h1><%=title %></h1>
+  
+
+        <form class="form" method="post">
+          <div class="from-group">
+            <label for="facultyIDTextField">Faculty ID</label>
+            <input
+              type="text"
+              class="form-control"
+              id="facultyid"
+              placeholder="Enter your Faculty ID:"
+              name="Facultyid"
+              required
+            />
+          </div>
+  
+          <div class="from-group">
+            <label for="facultyNameTextField">Faculty Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="facultyNameTextField"
+              placeholder="Enter a Faculty Name:"
+              name="Facultyname"
+              required
+            />
+          </div>
+  
+          <div class="from-group">
+            <label for="departmentTextField">Department</label>
+            <input
+              type="text"
+              class="form-control"
+              id="departmentTextField"
+              placeholder="Enter your Department:"
+              name="Department"
+              required
+            />
+          </div>
+
+          <div class="from-group">
+            <label for="subjectTextField">Subject</label>
+            <input
+              type="text"
+              class="form-control"
+              id="SubjectTextField"
+              placeholder="Enter your Subject:"
+              name="Subject"
+              required
+            />
+          </div>
+       
+          <button class="btn btn-primary" type="submit">
+            <i class="fas fa-edit"></i>Submit
+          </button>
+  
+          <a href="/faculties" class="btn btn-warning">
+            <i class="fas fa-undo"></i>Cancel
+          </a>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+
+<% include ../partials/footer.ejs %>
