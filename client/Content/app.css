@@ -1,5 +1,7 @@
 /* Custom CSS goes here */
 body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding-bottom: 70px;
+  background-color: rgb(198, 212, 226);
   }
 
